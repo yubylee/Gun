@@ -22,7 +22,20 @@
       <section id="headling">
         <h2>태민</h2>                  
         <div class="detail"> 
-          <img src="image/tae.jpg">                            
+          <img id="jj" onclick="hide()" src="image/tae.jpg">
+          <script>
+            function hide(){
+                let status = document.getElementById("gg").style.visibility;
+    
+                if(status == ""){
+                    document.getElementById("gg").style.visibility = "hidden";
+                } else if (status == "hidden") {
+                    document.getElementById("gg").style.visibility = ""
+                }
+                var audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-fast-small-transition-166.mp3')
+                audio.play();
+            }
+        </script>                            
           <b><p>프로필</p></b>          
           <p>출생 : 1993년 7월 18일 / 서울특별시 </p>
           <p>신체 : 174cm / 58kg / 260mm / B형</p>
@@ -34,7 +47,20 @@
       <section id="activity">
         <h2>안유진</h2>
         <div class="detail">          
-          <img src="image/an.jpg">
+          <img id="gg" onclick="hide()" src="image/an.jpg">
+          <script>
+            function hide(){
+                let status = document.getElementById("jj").style.visibility;
+    
+                if(status == ""){
+                    document.getElementById("jj").style.visibility = "hidden";
+                } else if (status == "hidden") {
+                    document.getElementById("jj").style.visibility = ""
+                }
+                var audio = new Audio('https://assets.mixkit.co/sfx/preview/mixkit-fast-small-transition-166.mp3')
+                audio.play();
+            }
+        </script>
           <b><p>프로필</p></b>          
           <p>출생 : 2003년 9월 1일 /대전광역시 </p>
           <p>신체 : 170cm / A형 / 250mm</p>
