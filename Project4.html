@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>gunhyoung</title>
+  <link rel="stylesheet" href="css/Project4.css">
+</head>
+<body>
+  <div id="container">    
+    <header>
+      <div id="logo">
+        <a><h1>gunhyoung</h1></a>
+      </div>
+      <nav>
+        <ul id="topMenu">
+          <li><a href="https://yubylee.github.io/">MDblog</a></li>
+          <li><a href="index.html">home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contents">
+        <div>
+          <ul>
+            <h1>로컬 GIT 저장소를 만들고 GITHUB.COM의 개인 저장소와 연결하라</h1><br>
+            
+                <h2>작업내용: (host1 리눅스 VM에서 작업을 수행한다.)</h2>
+
+                    <ul>
+                     <li> 1) 다음의 경로에 로컬 깃 저장소를 생성한다.</li>
+
+                     <li>~/git/bitcamp-ncp2/</li><br>
+                  
+                      <li>2) 다음의 테스트 파일을 생성하고 로컬 저장소에 커밋한다.</li>
+                  
+                        <li>~/git/bitcamp-ncp2/a.txt </li>
+                  
+                          <li> a.txt 파일의 내용을 아무거나 입력한다.</li><br>
+                  
+                            <li> 3) github.com의 개인 계정에 bitcamp-ncp2 이름으로 저장소를 생성한다.</li><br>
+                  
+                              <li>4) 로컬 깃 저장소와 원격 깃 저장소를 연결한다.</li><br>
+                  
+                                <li> 5) 로컬 깃 저장소의 내용을 원격 저장소에 push 한다.</li><br>
+                                <hr>
+                    </ul><br>
+                    <h2>cmd</h2><br>
+                    <ul>
+                      <li>해당 리눅스 서버 접속 vagran ssh</li>
+                        <li>cd git</li> 
+                          <li>git config --global user.name "LeeGunhyoung"  </li>
+                            <li>git config --global user.email "yuby1003@naver.com"  </li>
+                              <li>git config -l  </li>
+                                <li>mkdir bitcamp-ncp3(저장소생성)  </li>
+                                  <li>cd bitcamp-ncp3  </li>
+                                    <li>sudo yum install nano  </li>
+                                      <li>git init  </li>
+                                        <li>ls -al  </li>
+                                          <li>nano a.txt  </li>
+                                            <li>ls -al  </li>
+                                              <li>git status --short  </li>
+                                                <li> git remote add origin https://github.com/yubylee/bitcamp-ncp4(깃허브에 리퍼지토리 생성후)  </li>
+                                                  <li>git remote -v  </li>
+                                                    <li>git remote show origin  </li>
+                                                      <li> git pull  </li>
+                                                        <li>git branch  </li>
+                                                          <li> git branch -m "main"  </li>
+                                                            <li>git branch  </li>
+                                                              <li>git add .  </li>
+                                                                <li>git commit -m ""  </li>
+                                                                  <li> git push --set-upstream origin main  </li>
+                                                                  <hr>
+                    </ul><br>
+                    
+                    <h2>ruby</h2><br>
+                    <ul>
+                      <li>1. ruby 설치</li><br>
+                        <li>2. gem install "테마" -v "버젼"</li><br>
+                          <li>- 테마는 기본이 jekyll 이고 너가 선택한 테마는</li>
+                            <li> xxx.gemspec에 있는 보통 spec.name을 넣으면 됨</li>
+                              <li>버젼은 spec.version</li>
+                      
+                                <li> 3. bundle install 해서 번들 설치</li><br>
+                      
+                                  <li> 4. bundler exec jekyll serve 실행하면 로컬 서버에 블로그 실행됨</li><br>
+                      
+                                    <li> 5. html,css,javascript는 static contents이기 때문에 수정이 실시간으로 된다. 만약안되면 강력 새로고침 후 확인한다.</li><br>
+                      
+                                      <li>6. yml 같은 파일은 로컬 서버에 빌드할때 컴파일(?)해서 올리므로 실시간으로 수정이 안되므로 서버를 내리고 수정 후 다시 서버를 올려야 한다.</li><br>
+                      
+                                        <li>* 그래서 그냥 뭔가 수정이 안되는 느낌이라면 서버를 내렸다가 다시 올려서 확인해본다. ctrl+c 누른 후 4번 실행</li>
+                    </ul>
+                </div>
+    </main>
+    <!-- <footer>    
+        <section id="bottomMenu">
+          <ul>
+            <li><a href="#">Created by gunhyoung</a></li>
+          </ul>
+        </section>   
+      </footer> -->
+      <aside>
+        <section>
+            <h2><b><a>Projects</a></b><br></h2>
+          <div class="detaill">
+            <ul>
+              <li>Project 8 (시맨틱 태그)</li>
+              <li>Project 7 (웹 기술 등장)</li>
+              <li>Project 6 (리눅스명령어)</li>
+              <li>Project 5 (branch)</li>
+              <a href="Project4.html"><li>Project 4 (git저장소)</li></a>
+              <a href="Project3.html"><li>Project 3 (vagrant)</li></a>
+              <a href="Project2.html"><li>Project 2 (hypervisor)</li></a>
+              <a href="Project1.html"><li>Project 1 (MarkDown)</li></a>
+            </ul>
+          </div>
+        </section>
+      </aside>

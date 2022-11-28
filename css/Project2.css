@@ -19,7 +19,8 @@ ul {
 }
 
 body{
-    zoom:1;
+    height: 100%;
+    zoom:0.85;
 }
 
 
@@ -83,10 +84,17 @@ nav{
     float: left;
     padding-left:50px; 
     padding-right:10px;
-    margin-bottom: 0px;
+    margin-bottom:20px;
   }
 main{
     border-right: 3px solid black;
+}
+.hyper{
+  float:center; 
+  margin-right:50px;
+  border-radius:20px;
+  width: 300px;
+  height: 250px;
 }
 /*   푸터 영역    */
 

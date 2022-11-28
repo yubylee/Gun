@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>gunhyoung</title>
+  <link rel="stylesheet" href="css/Project3.css">
+</head>
+<body>
+  <div id="container">    
+    <header>
+      <div id="logo">
+        <a><h1>gunhyoung</h1></a>
+      </div>
+      <nav>
+        <ul id="topMenu">
+          <li><a href="https://yubylee.github.io/">MDblog</a></li>
+          <li><a href="index.html">home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contents">
+        <div>
+            <h1>vm 생성 및 git 개인페이지 변경하기</h1><br>
+            
+                <h2>centos 5 생성</h2>
+                <ul>
+                  <li>  ▶ project directory 생성</li>
+                  <li>  ▶ vegrantfile 준비</li>
+                  <li>  ▶ VM을 실행</li>
+              </ul><br>
+
+                <h2>CENTOS5 VM 접속</h2><br>
+                    <ul>
+                        <li>  ▶ vm ssh 접속</li>
+                    </ul><br>
+
+                    <h2>git개인홈페이지 변경</h2><br>
+                    <ul>
+                        <li>1) yum git 설치</li>
+                        <li>2) nano 설치</li>
+                        <li>3) git config 의 email 과 name 설정</li>
+                        <li>4) git 개인페이지 저장소 복제</li>
+                        <li>5) [READ.ME](http://READ.ME) 편집</li>
+                        <li>6) git commit & push</li>
+                    </ul><br>
+
+                    <h2>centos</h2><br>
+                    <ul>
+                        <li>mkdir centos3</li>
+
+                        <li>cd centos3</li>
+                          
+                          <li> vagrant init</li>
+                          
+                            <li>→ 파일 만들어진곳가서 ex) vscode centos5 들어가서</li>
+                          
+                              <li>[config.vm.box](http://config.vm.box) = “centos/7” -> base? box? 대신에 centos/7 기입</li>
+                          
+                                <li>다른방법으로는 vagrant init centos/7           cmd에입력</li>
+                          
+                                  <li>config.vm.hostname = “myhost1.bitcamp”</li>
+                          
+                                    <li>vagrant up</li>
+                          
+                                      <li>vagrant ssh></li>
+                          
+                                        <li> hostname</li>
+                    </ul>
+                </div>
+    </main>
+    <!-- <footer>    
+        <section id="bottomMenu">
+          <ul>
+            <li><a href="#">Created by gunhyoung</a></li>
+          </ul>
+        </section>   
+      </footer> -->
+      <aside>
+        <section>
+            <h2><b><a>Projects</a></b><br></h2>
+          <div class="detaill">
+            <ul>
+              <li>Project 8 (시맨틱 태그)</li>
+              <li>Project 7 (웹 기술 등장)</li>
+              <li>Project 6 (리눅스명령어)</li>
+              <li>Project 5 (branch)</li>
+              <a href="Project4.html"><li>Project 4 (git저장소)</li></a>
+              <a href="Project3.html"><li>Project 3 (vagrant)</li></a>
+              <a href="Project2.html"><li>Project 2 (hypervisor)</li></a>
+              <a href="Project1.html"><li>Project 1 (MarkDown)</li></a>
+            </ul>
+          </div>
+        </section>
+      </aside>
