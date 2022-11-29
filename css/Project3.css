@@ -98,7 +98,7 @@ main{
       opacity: 0;
   }
   to{
-      left:380px;
+      left:350px;
       opacity: 1;
   }
 }

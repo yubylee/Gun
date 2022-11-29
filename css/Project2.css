@@ -105,7 +105,7 @@ main{
       opacity: 0;
   }
   to{
-      left:330px;
+      left:300px;
       opacity: 1;
   }
 }
