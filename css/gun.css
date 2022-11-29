@@ -124,6 +124,11 @@ aside{
   color: green;
   line-height: 50px;
 }
+a li:hover{
+font-size: 150%;
+color: blueviolet;
+font-style: italic;
+}
 
 
 /*   푸터 영역    */
