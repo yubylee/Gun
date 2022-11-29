@@ -85,6 +85,8 @@ nav{
     padding-left:50px; 
     padding-right:10px;
     margin-bottom:20px;
+    position: absolute;
+    animation: slide 2s ease-out;
   }
 main{
     border-right: 3px solid black;
@@ -95,6 +97,17 @@ main{
   border-radius:20px;
   width: 300px;
   height: 250px;
+}
+
+@keyframes slide {
+  from{
+      left:-100px;
+      opacity: 0;
+  }
+  to{
+      left:330px;
+      opacity: 1;
+  }
 }
 /*   푸터 영역    */
 

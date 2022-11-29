@@ -84,9 +84,22 @@ nav{
     padding-left:50px; 
     padding-right:10px;
     margin-bottom: 0px;
+    position: absolute;
+    animation: slide 2s ease-out;
   }
 main{
     border-right: 3px solid black;
+}
+
+@keyframes slide {
+  from{
+      left:-100px;
+      opacity: 0;
+  }
+  to{
+      left:250px;
+      opacity: 1;
+  }
 }
 /*   푸터 영역    */
 

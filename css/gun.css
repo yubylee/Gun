@@ -24,8 +24,9 @@ ul {
 header{
   width:100%;    /*  너비 */
   height:100px;   /* 높이 */ 
-  background-color:rgb(35, 25, 74);  
+  background-color:rgb(35, 25, 74);
 }
+
 
 /* 로고 */
 #logo{ 
@@ -108,6 +109,9 @@ main h3 {
 }
 
 
+
+
+
 /*   사이드영역   */
 
 
@@ -118,7 +122,9 @@ aside{
   float: right;
 }
 .detaill{
+  position: absolute;
   font-size: large;
+  animation: slide 2s ease-out;
 }
 .detaill li{
   color: green;
@@ -131,6 +137,18 @@ font-style: italic;
 }
 
 
+@keyframes slide {
+  from{
+      right:-100px;
+      opacity: 0;
+  }
+  to{
+      right:250px;
+      opacity: 1;
+  }
+}
+
+
 /*   푸터 영역    */
 
 
@@ -139,6 +157,7 @@ footer{
   height:10px;  
   border-top:2px solid #222;
   margin-top: 0px;
+  clear: left;
 }
 #bottomMenu{
   width:100%;
